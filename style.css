@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.1vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr 6fr / 1.2fr 5fr;
+    grid-template-areas: 
+    'nav header'
+    'nav main';
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: grid;
+    grid-area: nav;
+    background-color: #334155;
+    color: white;
+    gap: 3vh;
+    grid-template-rows: 0.3fr 1fr 0.5fr 1fr;
+}
+
+nav > *, nav > * > * {
+    display: grid;
+    align-items: center;
+    justify-items: flex-start;
+    margin-left: 1vw;
+}
+
+nav div div {
+    width: 100%;
+    display: inline-flex;
+    font-size: 2vh;
+}
+
+nav div div svg {
+    height: 4vh;
+    margin-right: 1vw;
+    fill: white;
+}
+
+nav div div:hover svg, nav div div:hover {
+    color: #0ea5e9;
+    fill: #0ea5e9;
+    cursor: pointer;
+}
+
+.dash {
+    display: inline-flex;
+    font-size: 3vh;
+}
+
+.dash svg {
+    height: 5vh;
+    margin-right: 1vw;
+    fill: white;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template-areas: 
+    'search profile'
+    'introduction main-buttons';
+}
+
+.search {
+    grid-area: search;
+    
+}
+
+.profile  {
+    grid-area: profile;
+}
+
+.introduction {
+    grid-area: introduction;
+}
+
+.main-buttons {
+    grid-area: main-buttons;
+}
+
+main {
+    grid-area: main;
+}
