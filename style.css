@@ -122,7 +122,7 @@ header div svg {
     height: 3vw;
     width: 3vw;
     border-radius: 100%;
-    background-image: url(/minhaFoto.jpg);
+    background-image: url(minhaFoto.jpg);
     background-size: contain;
 }
 
@@ -147,7 +147,7 @@ header div svg {
     height: 3vw;
     width: 3vw;
     border-radius: 100%;
-    background-image: url(/minhaFoto.jpg);
+    background-image: url(minhaFoto.jpg);
     background-size: contain;
 }
 
